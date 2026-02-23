@@ -19,6 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "MMM-TP2"
+rootProject.name = "NetworkKOUTOUADEGNY"
 include(":app")
  
