@@ -1,4 +1,4 @@
-package com.example.mmm_tp2.ui.theme
+package fr.istic.mob.networkKOUTOUADEGNY.theme
 
 import androidx.compose.ui.graphics.Color
 

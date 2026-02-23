@@ -5,7 +5,7 @@ plugins {
 }
 
 android {
-    namespace = "com.example.mmm_tp2"
+    namespace = "com.example.NetworkKOUTOUADEGNY"
     compileSdk {
         version = release(36)
     }
