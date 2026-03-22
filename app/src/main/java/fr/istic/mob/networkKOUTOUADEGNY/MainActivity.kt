@@ -20,7 +20,7 @@ import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.google.android.material.snackbar.Snackbar
 import fr.istic.mob.networkKOUTOUADEGNY.data.GraphJsonCodec
 import fr.istic.mob.networkKOUTOUADEGNY.data.GraphStorage
-import fr.istic.mob.networkKOUTOUADEGNY.ActivityMainBinding
+import fr.istic.mob.networkKOUTOUADEGNY.databinding.ActivityMainBinding
 import fr.istic.mob.networkKOUTOUADEGNY.databinding.DialogConnectionEditorBinding
 import fr.istic.mob.networkKOUTOUADEGNY.databinding.DialogNodeEditorBinding
 import fr.istic.mob.networkKOUTOUADEGNY.model.ApartmentPlan
@@ -441,7 +441,7 @@ class MainActivity : AppCompatActivity(), GraphEditorView.Listener {
         drawable.draw(canvas)
 
         val sharedDirectory = File(cacheDir, "shared").apply { mkdirs() }
-        val outputFile = File(sharedDirectory, "networkdk_graph.png")
+        val outputFile = File(sharedDirectory, "networkkoutouadegny_graph.png")
         FileOutputStream(outputFile).use { output ->
             bitmap.compress(Bitmap.CompressFormat.PNG, 100, output)
         }

@@ -1,0 +1,76 @@
+<resources>
+    <string name="app_name">NetworkKOUTOUADEGNY</string>
+    <string name="app_title">Network KOUTOUA / DEGNY</string>
+
+    <string name="mode_section_title">Modes</string>
+    <string name="plan_section_title">Apartment plan</string>
+    <string name="interaction_hint">Long press an empty area in object mode. Drag an object in edit mode. Drag the middle of a connection to bend the arc.</string>
+
+    <string name="mode_add_object">Add object</string>
+    <string name="mode_add_connection">Add connection</string>
+    <string name="mode_edit">Edit</string>
+
+    <string name="plan_studio">Studio</string>
+    <string name="plan_family">Family apartment</string>
+    <string name="plan_loft">Loft</string>
+
+    <string name="room_entrance">Entrance</string>
+    <string name="room_living">Living room</string>
+    <string name="room_bathroom">Bathroom</string>
+    <string name="room_bedroom">Bedroom</string>
+    <string name="room_kitchen">Kitchen</string>
+    <string name="room_garage">Garage</string>
+    <string name="room_bedroom_one">Bedroom 1</string>
+    <string name="room_bedroom_two">Bedroom 2</string>
+    <string name="room_office">Office</string>
+    <string name="room_storage">Storage</string>
+    <string name="room_open_space">Open space</string>
+
+    <string name="menu_reset">Reset network</string>
+    <string name="menu_save">Save network</string>
+    <string name="menu_load">Show saved network</string>
+    <string name="menu_share">Send network by email</string>
+
+    <string name="dialog_add_object">Add object</string>
+    <string name="dialog_edit_object">Edit object</string>
+    <string name="dialog_add_connection">Add connection</string>
+    <string name="dialog_edit_connection">Edit connection</string>
+
+    <string name="field_label">Label</string>
+    <string name="field_color">Color</string>
+    <string name="field_thickness">Thickness</string>
+
+    <string name="color_red">Red</string>
+    <string name="color_green">Green</string>
+    <string name="color_blue">Blue</string>
+    <string name="color_orange">Orange</string>
+    <string name="color_cyan">Cyan</string>
+    <string name="color_magenta">Magenta</string>
+    <string name="color_black">Black</string>
+
+    <string name="action_edit">Edit</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_validate">Confirm</string>
+
+    <string name="label_required">A label is required.</string>
+    <string name="save_success">Network saved to internal storage.</string>
+    <string name="load_success">Saved network loaded.</string>
+    <string name="no_saved_network">No saved network was found.</string>
+    <string name="save_error">Unable to save the network.</string>
+    <string name="load_error">Unable to load the saved network.</string>
+    <string name="share_error">Unable to share the network image.</string>
+
+    <string name="share_subject">Home network snapshot</string>
+    <string name="share_body">Please find the home network snapshot attached.</string>
+    <string name="share_network">Share network</string>
+
+    <string name="connection_duplicate_error">A connection between these two objects already exists.</string>
+    <string name="connection_loop_error">A connection cannot link an object to itself.</string>
+    <string name="connection_node_missing_error">Unable to create the connection: missing object.</string>
+
+    <string name="reset_dialog_title">Reset network</string>
+    <string name="reset_dialog_message">The current network will be cleared.</string>
+
+    <string name="thickness_value">Thickness: %1$d dp</string>
+</resources>

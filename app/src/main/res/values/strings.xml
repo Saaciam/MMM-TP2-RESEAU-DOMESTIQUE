@@ -1,0 +1,76 @@
+<resources>
+    <string name="app_name">NetworkKOUTOUADEGNY</string>
+    <string name="app_title">Network KOUTOUA / DEGNY</string>
+
+    <string name="mode_section_title">Modes</string>
+    <string name="plan_section_title">Plan appartement</string>
+    <string name="interaction_hint">Appui long sur une zone vide en mode ajout objet. Glissez un objet en mode modification. Faites glisser le milieu dune connexion pour courber la liaison.</string>
+
+    <string name="mode_add_object">Ajout objet</string>
+    <string name="mode_add_connection">Ajout connexion</string>
+    <string name="mode_edit">Modification</string>
+
+    <string name="plan_studio">Studio</string>
+    <string name="plan_family">Appartement familial</string>
+    <string name="plan_loft">Loft</string>
+
+    <string name="room_entrance">Entree</string>
+    <string name="room_living">Sejour</string>
+    <string name="room_bathroom">Salle de bain</string>
+    <string name="room_bedroom">Chambre</string>
+    <string name="room_kitchen">Cuisine</string>
+    <string name="room_garage">Garage</string>
+    <string name="room_bedroom_one">Chambre 1</string>
+    <string name="room_bedroom_two">Chambre 2</string>
+    <string name="room_office">Bureau</string>
+    <string name="room_storage">Rangement</string>
+    <string name="room_open_space">Open space</string>
+
+    <string name="menu_reset">Reinitialiser le reseau</string>
+    <string name="menu_save">Sauvegarder le reseau</string>
+    <string name="menu_load">Afficher le reseau sauvegarde</string>
+    <string name="menu_share">Envoyer le reseau par mail</string>
+
+    <string name="dialog_add_object">Ajouter un objet</string>
+    <string name="dialog_edit_object">Modifier objet</string>
+    <string name="dialog_add_connection">Ajouter une connexion</string>
+    <string name="dialog_edit_connection">Modifier la connexion</string>
+
+    <string name="field_label">Etiquette</string>
+    <string name="field_color">Couleur</string>
+    <string name="field_thickness">Epaisseur</string>
+
+    <string name="color_red">Rouge</string>
+    <string name="color_green">Vert</string>
+    <string name="color_blue">Bleu</string>
+    <string name="color_orange">Orange</string>
+    <string name="color_cyan">Cyan</string>
+    <string name="color_magenta">Magenta</string>
+    <string name="color_black">Noir</string>
+
+    <string name="action_edit">Modifier</string>
+    <string name="action_delete">Supprimer</string>
+    <string name="action_cancel">Annuler</string>
+    <string name="action_validate">Valider</string>
+
+    <string name="label_required">Le label est obligatoire.</string>
+    <string name="save_success">Reseau sauvegarde dans la memoire interne.</string>
+    <string name="load_success">Reseau sauvegarde charge.</string>
+    <string name="no_saved_network">Aucun reseau sauvegarde na ete trouve.</string>
+    <string name="save_error">Impossible de sauvegarder le reseau.</string>
+    <string name="load_error">Impossible de charger le reseau sauvegarde.</string>
+    <string name="share_error">Impossible de partager limage du reseau.</string>
+
+    <string name="share_subject">Capture du reseau domestique</string>
+    <string name="share_body">Veuillez trouver en piece jointe la capture du reseau domestique.</string>
+    <string name="share_network">Partager le reseau</string>
+
+    <string name="connection_duplicate_error">Une connexion entre ces deux objets existe deja.</string>
+    <string name="connection_loop_error">Une connexion ne peut pas relier un objet a lui meme.</string>
+    <string name="connection_node_missing_error">Connexion impossible : objet introuvable.</string>
+
+    <string name="reset_dialog_title">Reinitialiser le reseau</string>
+    <string name="reset_dialog_message">Le reseau en cours sera supprime.</string>
+
+    <string name="thickness_value">Epaisseur : %1$d dp</string>
+</resources>
