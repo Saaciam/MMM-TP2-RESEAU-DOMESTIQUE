@@ -1,33 +1,29 @@
 package fr.istic.mob.networkKOUTOUADEGNY.model
 
-import android.graphics.Color
-import android.graphics.PointF
-
-// 1. Représente un objet connecté (ex: TV, Imprimante)
-data class NetworkObject(
-    var label: String,
-    var position: PointF, // Coordonnées X, Y
-    var color: Int = Color.BLUE,
-    val id: Long = System.currentTimeMillis() // Identifiant unique
+data class GraphNode(
+    val id: Long,
+    val label: String,
+    val xDp: Float,
+    val yDp: Float,
+    val color: NetworkColor,
 )
 
-// 2. Représente une connexion entre deux objets
-data class Connection(
-    val from: NetworkObject,
-    val to: NetworkObject,
-    var label: String,
-    var color: Int = Color.BLACK,
-    var thickness: Float = 5f,
-    var curvature: Float = 0f // Pour gérer l'arc plus tard
+data class GraphConnection(
+    val id: Long,
+    val startNodeId: Long,
+    val endNodeId: Long,
+    val label: String,
+    val color: NetworkColor,
+    val strokeWidthDp: Float = 6f,
+    val curvatureDp: Float = 0f,
 )
 
-// 3. Le Modèle principal demandé par le sujet
-class Graph {
-    val objects = mutableListOf<NetworkObject>()
-    val connections = mutableListOf<Connection>()
-
-    fun clear() {
-        objects.clear()
-        connections.clear()
-    }
+data class Graph(
+    val plan: ApartmentPlan = ApartmentPlan.STUDIO,
+    val nodes: List<GraphNode> = emptyList(),
+    val connections: List<GraphConnection> = emptyList(),
+    val nextNodeId: Long = 1L,
+    val nextConnectionId: Long = 1L,
+) {
+    fun findNode(nodeId: Long): GraphNode? = nodes.firstOrNull { it.id == nodeId }
 }

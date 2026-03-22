@@ -1,27 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    >
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
         android:id="@+id/action_reset"
-        android:title="Réinitialiser"
+        android:title="@string/menu_reset"
         app:showAsAction="never" />
 
     <item
         android:id="@+id/action_save"
-        android:title="Sauvegarder"
+        android:title="@string/menu_save"
         app:showAsAction="never" />
 
     <item
-        android:id="@+id/action_display"
-        android:title="Afficher"
+        android:id="@+id/action_load"
+        android:title="@string/menu_load"
         app:showAsAction="never" />
 
     <item
-        android:id="@+id/action_send"
-        android:title="Envoyer"
+        android:id="@+id/action_share"
+        android:title="@string/menu_share"
         app:showAsAction="never" />
-
-
 </menu>

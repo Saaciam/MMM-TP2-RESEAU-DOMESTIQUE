@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="Theme.NetworkKOUTOUADEGNY" parent="Theme.AppCompat.DayNight">
-        <item name="colorPrimary">@color/purple_500</item>
+
+    <style name="Theme.NetworkDK" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/network_primary</item>
+        <item name="colorOnPrimary">@color/network_on_primary</item>
+        <item name="colorPrimaryContainer">@color/network_primary_container</item>
+        <item name="colorOnPrimaryContainer">@color/network_on_primary_container</item>
+        <item name="android:colorBackground">@color/network_background</item>
+        <item name="colorSurface">@color/network_surface</item>
     </style>
 </resources>
