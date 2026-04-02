@@ -1,8 +1,12 @@
 package fr.istic.mob.networkKOUTOUADEGNY.model
+
 import androidx.annotation.StringRes
 import fr.istic.mob.networkKOUTOUADEGNY.R
 
-// Une petite classe interne ou data class pour stocker les noms des pièces
+/**
+ * Représente un segment de mur dans le plan de l'appartement.
+ * Défini par un point de départ (start) et un point d'arrivée (end) en coordonnées DP.
+ */
 data class PlanWall(
     val startXDp: Float,
     val startYDp: Float,
@@ -10,19 +14,30 @@ data class PlanWall(
     val endYDp: Float,
 )
 
+/**
+ * Représente le nom d'une pièce affiché sur le plan.
+ * @property xDp Position horizontale du texte.
+ * @property yDp Position verticale du texte.
+ * @property textRes Référence vers la chaîne de caractères (R.string) du nom de la pièce.
+ */
 data class PlanLabel(
     val xDp: Float,
     val yDp: Float,
     @StringRes val textRes: Int,
 )
 
+/**
+ * Énumération regroupant les différents modèles d'appartements disponibles.
+ * Chaque instance définit sa propre géométrie (murs) et ses annotations (labels).
+ */
 enum class ApartmentPlan(
-    @StringRes val labelRes: Int,
-    val widthDp: Int,
-    val heightDp: Int,
-    val walls: List<PlanWall>,
-    val roomLabels: List<PlanLabel>,
+    @StringRes val labelRes: Int, // Nom du plan (ex: "Studio", "Familial")
+    val widthDp: Int,            // Largeur totale de la zone de dessin
+    val heightDp: Int,           // Hauteur totale de la zone de dessin
+    val walls: List<PlanWall>,   // Liste des murs intérieurs
+    val roomLabels: List<PlanLabel>, // Noms des pièces positionnés
 ) {
+    /** Configuration pour un petit appartement de type Studio */
     STUDIO(
         labelRes = R.string.plan_studio,
         widthDp = 1400,
@@ -41,6 +56,8 @@ enum class ApartmentPlan(
             PlanLabel(1160f, 700f, R.string.room_kitchen),
         ),
     ),
+
+    /** Configuration pour un appartement familial plus large avec plusieurs chambres */
     FAMILY(
         labelRes = R.string.plan_family,
         widthDp = 1720,
@@ -64,6 +81,8 @@ enum class ApartmentPlan(
             PlanLabel(1180f, 920f, R.string.room_office),
         ),
     ),
+
+    /** Configuration de type Loft (espace ouvert) */
     LOFT(
         labelRes = R.string.plan_loft,
         widthDp = 1560,
@@ -85,7 +104,12 @@ enum class ApartmentPlan(
     );
 
     companion object {
+        /**
+         * Permet de récupérer l'instance de ApartmentPlan à partir de son nom String.
+         * Utile pour la désérialisation JSON ou le passage de données entre activités.
+         */
         fun fromName(name: String?): ApartmentPlan {
+            // "entries" est la liste de toutes les valeurs définies ci-dessus (STUDIO, FAMILY, LOFT)
             return entries.firstOrNull { it.name == name } ?: STUDIO
         }
     }
